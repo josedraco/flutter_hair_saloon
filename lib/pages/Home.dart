@@ -28,7 +28,7 @@ class HomeState extends State<Home> {
                 actions: <Widget>[
                   Padding(
                     padding: EdgeInsets.only(right: 15.0),
-                    child: Icon(Icons.notifications),
+                    child: Icon(Icons.power_settings_new),
                   )
                 ],
                 title: Text(
