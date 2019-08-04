@@ -55,7 +55,7 @@ class HomeListView extends StatelessWidget{
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: primary.withOpacity(0.8),
+                      color: primaryColor.withOpacity(0.8),
                     ),
                     height: 5,
                     width: 80.0,

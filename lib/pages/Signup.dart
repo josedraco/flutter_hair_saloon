@@ -157,7 +157,7 @@ class SignupState extends State<Signup> {
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     child: CustomButton(
-                      color: primary,
+                      color: primaryColor,
                       width: double.infinity,
                       name: "Register Now",
                       onTap: () {
@@ -165,6 +165,22 @@ class SignupState extends State<Signup> {
                         signup();
                       },
                       textStyle: loginButton,
+                    ),
+                  ),
+                  SizedBox(height: 20.0),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("Already have an account ? ",style: TextStyle(color: Colors.white),),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.pop(context);
+                          },
+                          child: Text("Login here",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),),
+                        )
+                      ],
                     ),
                   )
                 ],
@@ -185,7 +201,7 @@ class SignupState extends State<Signup> {
           Container(
             width: MediaQuery.of(context).size.width / 4.5,
             height: 2.0,
-            color: primary,
+            color: primaryColor,
           ),
           Text(
             "Register now",
@@ -197,7 +213,7 @@ class SignupState extends State<Signup> {
           Container(
             width: MediaQuery.of(context).size.width / 4.5,
             height: 2.0,
-            color: primary,
+            color: primaryColor,
           )
         ],
       ),

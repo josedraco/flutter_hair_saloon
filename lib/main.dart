@@ -27,8 +27,8 @@ class Main extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: "Raleway",
-        primaryColor: primary,
-        accentColor: primary
+        primaryColor: primaryColor,
+        accentColor: primaryColor
       ),
       home: Root(),
     );

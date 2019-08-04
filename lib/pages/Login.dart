@@ -132,7 +132,7 @@ class LoginState extends State<Login> {
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 20.0),
                       child: CustomButton(
-                        color: primary,
+                        color: primaryColor,
                         width: double.infinity,
                         name: "Login",
                         onTap: () {
@@ -178,13 +178,13 @@ class LoginState extends State<Login> {
           Container(
             width: MediaQuery.of(context).size.width/3.5,
             height: 2.0,
-            color: primary,
+            color: primaryColor,
           ),
           Text("Login",style: TextStyle(fontSize: 23.0,color: Colors.white,fontWeight: FontWeight.bold),),
           Container(
             width: MediaQuery.of(context).size.width/3.5,
             height: 2.0,
-            color: primary,
+            color: primaryColor,
           )
         ],
       ),

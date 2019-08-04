@@ -187,7 +187,7 @@ class BookingState extends State<Booking> {
                       SizedBox(height: 20.0,),
                       CustomButton(
                         width: double.infinity,
-                        color: primary,
+                        color: primaryColor,
                         onTap: () {
                           unFocus();
                           onSubmit();
