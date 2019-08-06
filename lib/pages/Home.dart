@@ -1,12 +1,13 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hair_saloon/Model/HomeListData.dart';
 import 'package:flutter_hair_saloon/pages/AboutUs.dart';
-import 'package:flutter_hair_saloon/pages/BlogDetails.dart';
 import 'package:flutter_hair_saloon/pages/Blogs.dart';
 import 'package:flutter_hair_saloon/pages/ContactUs.dart';
 import 'package:flutter_hair_saloon/pages/HomeListView.dart';
 import 'package:flutter_hair_saloon/widgets/BackGroundImage.dart';
 import 'package:flutter_hair_saloon/pages/Booking.dart';
+import 'package:flutter_hair_saloon/pages/Login.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -26,9 +27,20 @@ class HomeState extends State<Home> {
           preferredSize: Size.fromHeight(60.0), // here the desired height
           child:AppBar(
                 actions: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(right: 15.0),
-                    child: Icon(Icons.power_settings_new),
+                  GestureDetector(
+                    onTap:(){
+                      Navigator.pushAndRemoveUntil(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context)=>Login()
+                          ),
+                          ModalRoute.withName("/root")
+                      );
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.only(right: 15.0),
+                      child: Icon(Icons.power_settings_new),
+                    ),
                   )
                 ],
                 title: Text(

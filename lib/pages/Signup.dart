@@ -18,16 +18,14 @@ class Signup extends StatefulWidget {
 }
 
 class SignupState extends State<Signup> {
-  Validation validation = Validation();
 
+  Validation validation = Validation();
   bool isAutoSubmit = false;
   final _formKey = GlobalKey<FormState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
-
   FocusNode email;
   FocusNode password;
   FocusNode username;
-
   TextEditingController emailCtrl;
   TextEditingController passwordCtrl;
   TextEditingController usernameCtrl;
@@ -39,7 +37,6 @@ class SignupState extends State<Signup> {
     email = FocusNode();
     password = FocusNode();
     username = FocusNode();
-
     emailCtrl = TextEditingController();
     passwordCtrl = TextEditingController();
     usernameCtrl = TextEditingController();

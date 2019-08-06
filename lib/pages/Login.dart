@@ -20,15 +20,13 @@ class Login extends StatefulWidget {
 }
 
 class LoginState extends State<Login> {
-  Validation validation = Validation();
 
+  Validation validation = Validation();
   bool isAutoSubmit = false;
   final _formKey = GlobalKey<FormState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
-
   FocusNode email;
   FocusNode password;
-
   TextEditingController emailCtrl;
   TextEditingController passwordCtrl;
 
@@ -167,8 +165,6 @@ class LoginState extends State<Login> {
       ),
     );
   }
-
-
   Widget loginText(){
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20.0),
