@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_hair_saloon/Model/Validation.dart';
 import 'package:flutter_hair_saloon/theme/Color.dart';
@@ -24,20 +23,15 @@ class BookingState extends State<Booking> {
 
   final _formKey = GlobalKey<FormState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
-
   FocusNode username;
   FocusNode email;
   FocusNode phoneNumber;
-
   TextEditingController usernameCtrl;
   TextEditingController emailCtrl;
   TextEditingController phoneCtrl;
   bool isAutoValid = false;
-
-
   DateTime selectedDate;
   Validation validation = Validation();
-
 
   openDatePciekr(BuildContext context)async{
     DateTime pickeed = await showDatePicker(
@@ -61,13 +55,11 @@ class BookingState extends State<Booking> {
     email = FocusNode();
     username = FocusNode();
     phoneNumber = FocusNode();
-
     emailCtrl = TextEditingController();
     usernameCtrl = TextEditingController();
     phoneCtrl = TextEditingController();
 
   }
-
 
   onSubmit(){
     setState(()=>isAutoValid = true);
@@ -187,7 +179,7 @@ class BookingState extends State<Booking> {
                       SizedBox(height: 20.0,),
                       CustomButton(
                         width: double.infinity,
-                        color: primary,
+                        color: primaryColor,
                         onTap: () {
                           unFocus();
                           onSubmit();

@@ -39,7 +39,7 @@ class ContactUs extends StatelessWidget {
                           ListTile(
                             leading: Icon(
                               Icons.email,
-                              color: primary,
+                              color: primaryColor,
                             ),
                             title: Text("Mail Us"),
                             subtitle: Text(
@@ -50,7 +50,7 @@ class ContactUs extends StatelessWidget {
                           ListTile(
                             leading: Icon(
                               Icons.call,
-                              color: primary,
+                              color: primaryColor,
                             ),
                             title: Text("Call Us"),
                             subtitle: Text(
@@ -81,7 +81,7 @@ class ContactUs extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.symmetric(vertical: 10.0),
                             child: CustomButton(
-                              color: primary,
+                              color: primaryColor,
                               width: double.infinity,
                               onTap: (){},
                               name: "Submit",
@@ -109,7 +109,7 @@ class ContactUs extends StatelessWidget {
                           ListTile(
                             leading: Icon(
                               Icons.location_on,
-                              color: primary,
+                              color: primaryColor,
                             ),
                             title: Text("Lorem ipsum, or lipsum as it is sometimes known"),
                           )

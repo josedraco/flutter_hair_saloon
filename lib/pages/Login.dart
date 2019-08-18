@@ -20,15 +20,13 @@ class Login extends StatefulWidget {
 }
 
 class LoginState extends State<Login> {
-  Validation validation = Validation();
 
+  Validation validation = Validation();
   bool isAutoSubmit = false;
   final _formKey = GlobalKey<FormState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
-
   FocusNode email;
   FocusNode password;
-
   TextEditingController emailCtrl;
   TextEditingController passwordCtrl;
 
@@ -132,7 +130,7 @@ class LoginState extends State<Login> {
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 20.0),
                       child: CustomButton(
-                        color: primary,
+                        color: primaryColor,
                         width: double.infinity,
                         name: "Login",
                         onTap: () {
@@ -167,8 +165,6 @@ class LoginState extends State<Login> {
       ),
     );
   }
-
-
   Widget loginText(){
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -178,13 +174,13 @@ class LoginState extends State<Login> {
           Container(
             width: MediaQuery.of(context).size.width/3.5,
             height: 2.0,
-            color: primary,
+            color: primaryColor,
           ),
           Text("Login",style: TextStyle(fontSize: 23.0,color: Colors.white,fontWeight: FontWeight.bold),),
           Container(
             width: MediaQuery.of(context).size.width/3.5,
             height: 2.0,
-            color: primary,
+            color: primaryColor,
           )
         ],
       ),
